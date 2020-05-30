@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Tea-time</title>
+	<link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+
+<body>
+
+<div class="container" id="container">
+ 
+     <div id="header">
+				<div id="title">
+					 <p style="font-size:35px; font-family:Courier">&nbsp;&nbsp;<a class="homeselect" href="https://james-scott.uk/">James Scott</a></p>
+				</div>
+
+				<div id="nav">
+					 <p style="font-size:20px; font-family:Courier"><a class="navselected" href="https://james-scott.uk/works/">Work</a> &nbsp;&nbsp; <a class="navselected" href="https://james-scott.uk/online-projects/">Online Projects</a> &nbsp;&nbsp; <a class="navselected" href="https://james-scott.uk/info/">Info</a> &nbsp;&nbsp;&nbsp;</p>
+         </div>  
+    </div>
+
+
+
+
+	<div id="content">
+	  	
+
+
+	    <!--Title/date-->
+		<div id=titledate> 
+			<span style="font-size:22px; font-style: italic;" >Tea-time</span>&nbsp;&nbsp;<span style="font-size:16px;">(2020)</span>
+		</div>
+
+		
+		<!--image carosel-->
+			
+		<div>
+			<div class="mySlides">
+			<div class="numbertext"><!--1 / 5--></div>
+	        <img src="1.jpg" alt="pic1" style="width:1024px; height:683px">
+	        </div>
+<!--
+	        <div class="mySlides">
+	        <div class="numbertext">2 / 5</div>
+	        <img src="2.jpg" alt="pic2" style="width:896px; height:598px">
+	        </div>
+
+	        <div class="mySlides">
+	        <div class="numbertext">3 / 5</div>
+	        <img src="3.jpg"  alt="pic3" style="width:896px; height:598px" >
+	        </div>
+
+	        <div class="mySlides">
+	        <div class="numbertext">4 / 5</div>
+	        <img src="4.jpg"  alt="pic5" style="width:896px; height:598px" >
+	        </div>
+
+	        <div class="mySlides">
+	        <div class="numbertext">5 / 5</div>
+	        <img src="5.jpg"  alt="pic5" style="width:896px; height:598px" >
+	        </div>
+
+	    </div>
+
+	    <br>
+
+	    <div style="text-align: center;"> 
+	        <button class="button" onclick="plusDivs(-1)"> &lang; </button>
+	        <button class="button" onclick="plusDivs(1)"> &rang; </button>
+	    </div>
+
+	  	<script>
+	 	var slideIndex = 1;
+	 	showDivs(slideIndex);
+	 	function plusDivs(n) {
+	    showDivs(slideIndex += n);
+	 	}
+	 	function currentDiv(n) {
+	    showDivs(slideIndex = n);
+	  	}
+	  	function showDivs(n) {
+	    var i;
+	    var x = document.getElementsByClassName("mySlides");
+	    if (n > x.length) {slideIndex = 1}    
+	    if (n < 1) {slideIndex = x.length}
+	    for (i = 0; i < x.length; i++) {
+	    x[i].style.display = "none";  
+	    }
+	    x[slideIndex-1].style.display = "block";  
+	  	}
+	  	</script>
+         -->
+
+	  	<!--work stats-->
+	  	<div id="workstats">
+	  	<p> 
+A gallery assistant offers a yellow iced plain biscuit to arriving visitors, they contain popping candy that is not disclosed as an ingredient.
+</p>
+<p> 
+A heating element is immersed in a two-litre novelty mug, timed to heat for 2 minutes, to boil, then rest for 8. 
+</p>
+<p> 
+HD video demonstrating using teatool® to make tea, duration: 3’20”   
+</p>
+	  	</div>
+	  	<br><br><br>
+
+
+
+
+
+<div style="text-align: right;"> <iframe src="https://player.vimeo.com/video/423092272?title=0&byline=0&portrait=0" width="640" height="480" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+	</div>
+
+	  
+	  		
+
+	    <!--description-->
+	    <div id="description"> 
+
+	    	<p></p>
+
+	    </div>
+
+	<br><br><br><br><br>
+	<br><br><br><br><br>
+	<br><br><br><br><br>
+
+	</div>
+	<!--footer-->
+
+	<div id="footer"> <hr> &copy;2020 James Scott &nbsp;&nbsp;|&nbsp;&nbsp; all rights reserved </div>
+	
+</div>
+
+
+
+
+</body>
+
+</html>
