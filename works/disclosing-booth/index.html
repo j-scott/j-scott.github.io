@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>disclosing booth</title>
+	<link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+
+<body>
+
+<div class="container" id="container">
+ 
+     <div id="header">
+				<div id="title">
+					 <p style="font-size:35px; font-family:Courier">&nbsp;&nbsp;<a class="homeselect" href="https://james-scott.uk/">James Scott</a></p>
+				</div>
+
+				<div id="nav">
+					 <p style="font-size:20px; font-family:Courier"><a class="navselected" href="https://james-scott.uk/works/">Work</a> &nbsp;&nbsp; <a class="navselected" href="https://james-scott.uk/online-projects/">Online Projects</a> &nbsp;&nbsp; <a class="navselected" href="https://james-scott.uk/info/">Info</a> &nbsp;&nbsp;&nbsp;</p>
+         </div>  
+    </div>
+
+
+
+
+	<div id="content">
+	  	
+
+
+	    <!--Title/date-->
+		<div id=titledate> 
+			<span style="font-size:22px; font-style: italic;" >disclosing booth</span>&nbsp;&nbsp;<span style="font-size:16px;">(2019)</span>
+		</div>
+
+		
+		<!--image carosel-->
+		<div>
+			<div class="mySlides">
+			<div class="numbertext">1 / 5</div>
+	        <img src="1.jpg" alt="pic1" style="width:896px; height:598px">
+	        </div>
+
+	        <div class="mySlides">
+	        <div class="numbertext">2 / 5</div>
+	        <img src="2.jpg" alt="pic2" style="width:896px; height:598px">
+	        </div>
+
+	        <div class="mySlides">
+	        <div class="numbertext">3 / 5</div>
+	        <img src="3.jpg"  alt="pic3" style="width:896px; height:598px" >
+	        </div>
+
+	        <div class="mySlides">
+	        <div class="numbertext">4 / 5</div>
+	        <img src="4.jpg"  alt="pic5" style="width:896px; height:598px" >
+	        </div>
+
+	        <div class="mySlides">
+	        <div class="numbertext">5 / 5</div>
+	        <img src="5.jpg"  alt="pic5" style="width:896px; height:598px" >
+	        </div>
+
+	    </div>
+
+	    <br>
+
+	    <div style="text-align: center;"> 
+	        <button class="button" onclick="plusDivs(-1)"> &lang; </button>
+	        <button class="button" onclick="plusDivs(1)"> &rang; </button>
+	    </div>
+
+	  	<script>
+	 	var slideIndex = 1;
+	 	showDivs(slideIndex);
+	 	function plusDivs(n) {
+	    showDivs(slideIndex += n);
+	 	}
+	 	function currentDiv(n) {
+	    showDivs(slideIndex = n);
+	  	}
+	  	function showDivs(n) {
+	    var i;
+	    var x = document.getElementsByClassName("mySlides");
+	    if (n > x.length) {slideIndex = 1}    
+	    if (n < 1) {slideIndex = x.length}
+	    for (i = 0; i < x.length; i++) {
+	    x[i].style.display = "none";  
+	    }
+	    x[slideIndex-1].style.display = "block";  
+	  	}
+	  	</script>
+
+
+	  	<!--work stats-->
+	  	<div id="workstats">
+	  	<p> A participatory event facilitated by a delegated performer, participants use a <br> disclosing tablet to reveal plaque on their teeth in a semi-private booth.</p>
+	  	<p> Images from a one night show at the Dolphin Gallery, St. Johns College, Oxford.</p>
+	  	</div>
+	  	<br><br><br>
+
+
+
+
+
+
+
+	  
+	  		 <div style="text-align: right; padding-right: 10px; font-family: times;
+			font-size: 14px; color: #3d3d3d;"> Participant instructions &nbsp;&nbsp; 
+	        <img src="instructions.jpg"  alt="instructions" style="width:600px; height:auto; box-shadow: 1px 1px 5px 1px #ccc;" >
+	        </div>
+	<br><br><br><br><br>
+	<br><br><br><br><br>
+	<br><br><br><br><br>
+	<br><br><br><br><br>
+	<br><br><br><br><br>
+	<br><br><br><br><br>
+	    <!--description-->
+	    <div id="description"> 
+
+	    	<p>A one way mirror conceals a camera secretly recording particpants teeth after treatment, to view the sister project <span style="font-style: italic;">disclosing-booth/dd-mm-yy</span>  developing over multiple iterations of the <span style="font-style: italic;">disclosing booth</span> click <a href="" style="color: #0000EE">here</a>.</p>
+
+	    </div>
+
+	<br><br><br><br><br>
+	<br><br><br><br><br>
+	<br><br><br><br><br>
+
+	</div>
+	<!--footer-->
+
+	<div id="footer"> <hr> &copy;2020 James Scott &nbsp;&nbsp;|&nbsp;&nbsp; all rights reserved </div>
+	
+</div>
+
+
+
+
+</body>
+
+</html>
