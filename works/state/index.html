@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>state</title>
+	<link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+
+<body>
+
+<div class="container" id="container">
+ 
+     <div id="header">
+				<div id="title">
+					 <p style="font-size:35px; font-family:Courier">&nbsp;&nbsp;<a class="homeselect" href="https://james-scott.uk/">James Scott</a></p>
+				</div>
+
+				<div id="nav">
+					 <p style="font-size:20px; font-family:Courier"><a class="navselected" href="https://james-scott.uk/works/">Work</a> &nbsp;&nbsp; <a class="navselected" href="https://james-scott.uk/online-projects/">Online Projects</a> &nbsp;&nbsp; <a class="navselected" href="https://james-scott.uk/about/">About</a> &nbsp;&nbsp;&nbsp;</p>
+         </div>  
+    </div>
+
+
+
+
+	<div id="content">
+	  	
+
+
+	    <!--Title/date-->
+		<div id=titledate> 
+			<span style="font-size:22px; font-style: italic;" >state</span>&nbsp;&nbsp;<span style="font-size:16px;">(2019)</span>
+		</div>
+
+		
+		<!--image carosel-->
+		<div>
+			<div class="mySlides">
+			<div class="numbertext">1 / 6</div>
+	        <img src="room0.jpg" alt="pic1" style="width:896px; height:504px">
+	        </div>
+
+	        <div class="mySlides">
+	        <div class="numbertext">2 / 6</div>
+	        <img src="screen0.jpg" alt="pic2" style="width:896px; height:504px">
+	        </div>
+
+	        <div class="mySlides">
+	        <div class="numbertext">3 / 6</div>
+	        <img src="dispenser0.jpg"  alt="pic3" style="width:896px; height:504px" >
+	        </div>
+
+	        <div class="mySlides">
+	        <div class="numbertext">4 / 6</div>
+	        <img src="elements0.jpg"  alt="pic5" style="width:896px; height:504px" >
+	        </div>
+
+	        <div class="mySlides">
+	        <div class="numbertext">5 / 6</div>
+	        <img src="table0.jpg"  alt="pic5" style="width:896px; height:504px" >
+	        </div>
+
+	        <div class="mySlides">
+	        <div class="numbertext">6 / 6</div>
+	        <img src="tablets0.jpg"  alt="pic6" style="width:896px; height:504px" >
+	        </div>
+
+	    </div>
+
+	    <br>
+
+	    <div style="text-align: center;"> 
+	        <button class="button" onclick="plusDivs(-1)"> &lang; </button>
+	        <button class="button" onclick="plusDivs(1)"> &rang; </button>
+	    </div>
+
+	  	<script>
+	 	var slideIndex = 1;
+	 	showDivs(slideIndex);
+	 	function plusDivs(n) {
+	    showDivs(slideIndex += n);
+	 	}
+	 	function currentDiv(n) {
+	    showDivs(slideIndex = n);
+	  	}
+	  	function showDivs(n) {
+	    var i;
+	    var x = document.getElementsByClassName("mySlides");
+	    if (n > x.length) {slideIndex = 1}    
+	    if (n < 1) {slideIndex = x.length}
+	    for (i = 0; i < x.length; i++) {
+	    x[i].style.display = "none";  
+	    }
+	    x[slideIndex-1].style.display = "block";  
+	  	}
+	  	</script>
+
+
+	  	<!--work stats-->
+	  	<div id="workstats">
+	  	<p> xxxxx <br> xxxxxx.</p>
+	  	<p> Images from the Dolphin Gallery, St. Johns College, Oxford.</p>
+	  	</div>
+	  	<br><br><br>
+	        
+	        <iframe src="https://player.vimeo.com/video/425275457?title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+	<br><br><br><br><br>
+	<br><br><br><br><br>
+	<br><br><br><br><br>
+
+	<iframe src="https://player.vimeo.com/video/425277071?title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+
+	<br><br><br><br><br>
+	<br><br><br><br><br>
+	<br><br><br><br><br>
+	    <!--description-->
+	    <div id="description"> 
+
+	    	<p>A one way mirror conceals a camera secretly recording particpants teeth after treatment, to view the sister project <span style="font-style: italic;">disclosing-booth/dd-mm-yy</span>  developing over multiple iterations of the <span style="font-style: italic;">disclosing booth</span> click <a href="" style="color: #0000EE">here</a>.</p>
+
+	    </div>
+
+	<br><br><br><br><br>
+	<br><br><br><br><br>
+	<br><br><br><br><br>
+
+	</div>
+	<!--footer-->
+
+	<div id="footer"> <hr> &copy;2020 James Scott &nbsp;&nbsp;|&nbsp;&nbsp; all rights reserved </div>
+	
+</div>
+
+
+
+
+</body>
+
+</html>
