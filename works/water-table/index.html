@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Water Table</title>
+	<link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+
+<body>
+
+<div class="container" id="container">
+ 
+     <div id="header">
+				<div id="title">
+					 <p style="font-size:35px; font-family:Courier">&nbsp;&nbsp;<a class="homeselect" href="https://james-scott.uk/">James Scott</a></p>
+				</div>
+
+				<div id="nav">
+					 <p style="font-size:20px; font-family:Courier"><a class="navselected" href="https://james-scott.uk/works/">Works</a> &nbsp;&nbsp; <a class="navselected" href="https://james-scott.uk/online-projects/">Online Projects</a> &nbsp;&nbsp; <a class="navselected" href="https://james-scott.uk/about/">About</a> &nbsp;&nbsp;&nbsp;</p>
+         </div>  
+    </div>
+
+
+
+
+	<div id="content">
+	  	<hr>
+
+
+	    <!--Title/date-->
+		<div id=titledate> 
+			<span style="font-size:24px; font-style: italic;" >Water Table</span>&nbsp;&nbsp;<span style="font-size:16px;">(2018)</span>
+		</div>
+
+		
+		<!--image carosel-->
+		<div>
+			<div class="mySlides">
+			<div class="numbertext">1 / 2</div>
+	        <img src="camera2web.jpg" alt="pic1" style="width:896px; height:598px">
+	        </div>
+
+	        <div class="mySlides">
+	        <div class="numbertext">2 / 2</div>
+	        <img src="camera1web.jpg" alt="pic2" style="width:896px; height:598px">
+	        </div>
+
+	    </div>
+
+	    <br>
+
+	    <div style="text-align: center;"> 
+	        <button class="button" onclick="plusDivs(-1)"> &lang; </button>
+	        <button class="button" onclick="plusDivs(1)"> &rang; </button>
+	    </div>
+
+	  	<script>
+	 	var slideIndex = 1;
+	 	showDivs(slideIndex);
+	 	function plusDivs(n) {
+	    showDivs(slideIndex += n);
+	 	}
+	 	function currentDiv(n) {
+	    showDivs(slideIndex = n);
+	  	}
+	  	function showDivs(n) {
+	    var i;
+	    var x = document.getElementsByClassName("mySlides");
+	    if (n > x.length) {slideIndex = 1}    
+	    if (n < 1) {slideIndex = x.length}
+	    for (i = 0; i < x.length; i++) {
+	    x[i].style.display = "none";  
+	    }
+	    x[slideIndex-1].style.display = "block";  
+	  	}
+	  	</script>
+
+
+
+	  	<!--work stats-->
+	  	<div id="workstats">
+	  	<p> Stills from video documentation (above). <br> Installed at Dolphin Gallery, Oxford.</p>
+	  	</div>
+
+	  	<br><br><br><br><br>
+	  	<br><br><br><br><br>
+	    
+	    <!--air pump-->
+	        <div style="text-align: right; padding-right: 20px"> <span style="	font-family: times; font-size: 14px; color: #3d3d3d;"> Excerpt from video documentation. &nbsp;&nbsp;</span>  
+	       <iframe src="https://player.vimeo.com/video/425470423?title=0&byline=0&portrait=0" width="640" height="480" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+	        </div>
+
+
+		<br><br><br><br><br>
+		<br><br><br><br><br>
+		<br><br><br><br><br>
+		<br><br><br><br><br>
+
+	
+	<img src="bouy.jpg" alt="pic2" style="width:896px;">
+<div style="text-align: right;">
+	<img src="bouy0.jpg" alt="pic2" style="width:448px; padding-right: 20px; padding-top: 30px">
+	</div>
+
+
+		<br><br><br><br><br>
+		<br><br><br><br><br>
+		<br><br><br><br><br>
+
+	    <!--description
+	    <div id="description"> 
+
+	    	<p></p>
+
+	    </div>
+				-->
+	
+
+	</div>
+
+		<!--footer-->
+
+		<div id="footer"> <hr> &copy;2020 James Scott &nbsp;&nbsp;|&nbsp;&nbsp; All Rights Reserved </div>
+	
+</div>
+
+
+
+
+</body>
+
+</html>
