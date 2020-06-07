@@ -81,9 +81,9 @@ a:hover.navselected{
 }
 
 #workstats {
-	padding-left: 20px;
+	padding-right: 125px;
 	padding-top: 20px;
-	text-align: left;
+	text-align: right;
 	font-family: times;
 	font-size: 14px;
 	color: #3d3d3d;
