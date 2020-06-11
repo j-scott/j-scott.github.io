@@ -47,7 +47,7 @@ a:hover.navselected{
 	color: #3d3d3d;
 }
 #content {
-	text-align: center;
+	text-align: left;
 	clear: both;
 	height: 100vh ;
 	padding: 0px;
