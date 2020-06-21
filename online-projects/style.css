@@ -1,9 +1,9 @@
 
+/* generic stuff */
+
 body {
 	background-color: white;
 }
-
-
 #container {
   background-color: white ; 
   width: 1140px ;
@@ -11,13 +11,11 @@ body {
   margin-left: auto ;
   margin-right: auto;
 }
-
 #title {
 	width: 400px;
   height: 130px;
 	float: left;
 }
-
 #nav {
 	text-align: right;
 	line-height: 80px;
@@ -25,19 +23,24 @@ body {
 	width: 480px;
 	float: right;
 }
-
 a.homeselect {
 	text-decoration: none;
   	color: #3d3d3d;
-  }
+  	font-weight: normal;
+}
+a:hover.homeselect{ 
+  color: red;
+  font-weight: normal;
+}
 a.navselected{
   text-decoration: none;
   color: #3d3d3d;
+  font-weight: normal;
 }
 a:hover.navselected{ 
   color: red;
+  font-weight: normal;
 }
-
 #footer {
 	clear: both;
 	padding: 60px 0px 10px 0px;
@@ -47,12 +50,50 @@ a:hover.navselected{
 	color: #3d3d3d;
 }
 
+/* page contents */
+
 #content {
 	text-align: center;
-	clear: both;
+	width: 1140px ;
 	height: 100vh ;
 	padding: 0px;
+	color: #3d3d3d;
 }
 
+#row1 {
+	
+	width: 1140px;
+	
+}
 
+#image {
+width: 348px;
+height:348px;
+float: left;
+padding: 60px 0px 70px 24px;
+}
 
+#text {
+width: 696px;
+height:348px;
+float: right;
+padding: 60px 24px 70px 0px;
+text-align: center;
+}	
+
+#row2 {
+	width: 1140px;
+}
+
+#row3 {
+	width: 1140px;
+}
+
+a {
+  color: blue;
+  font-weight: bold;
+}
+a:hover {
+	color: purple;
+	font-weight: bold;
+	}
