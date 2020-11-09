@@ -52,11 +52,19 @@ a:hover.navselected{
 	padding: 0px;
 }
 
-#row1 {
+#row0 {
 	
 	width: 1140px;
 	
 }
+
+#longrow {
+width: 1092px;
+height:348px;
+float: left;
+padding: 60px 0px 0px 24px;
+}
+
 
 #rowleft {
 width: 348px;
@@ -79,6 +87,11 @@ float: left;
 padding: 60px 0px 0px 24px;
 }	
 
+#row1 {
+	
+	width: 1140px;
+	
+}
 #row2 {
 	width: 1140px;
 }
