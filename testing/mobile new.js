@@ -9,7 +9,7 @@ if( /Android|webOS|iPhone|iPad|iPod
 
 // forward to main site if mobile device not detected  
 else {
-	window.location = "insert-main-site-url-here";
+	window.location = "www.google.com";
 }
 
 
