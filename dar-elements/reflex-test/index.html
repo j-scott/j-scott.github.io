@@ -97,7 +97,14 @@ function startit()
 		timerID=setTimeout('startTest()', 6000*randNumber());
 	}
 }
+
+window.alert = top.alert;
+window.confirm = top.confirm;
+window.prompt = top.prompt;
+
 // --> 
+
+
 </script>
 
 <p>Test your Response time!</p>
