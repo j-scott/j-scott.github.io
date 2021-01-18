@@ -3,5 +3,5 @@ if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(naviga
 	
 }
 else {
-	window.location = "https://www.google.co.uk/";
+	window.location = "https://www.digitalartistresidency.org/artists/james-scott/";
 }
