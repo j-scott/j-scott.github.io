@@ -105,15 +105,22 @@ function startit()
 
 </script>
 
-<p>Test your Response time!</p>
-Click on "Start" first, and wait until the background color changes. As soon as it changes, hit "stop!"
+<h1>Test your Response time!</h1>
+<h2>Instructions:</h2>
+<ol style="max-width: 510px; margin: auto;">
+	<li style="text-align: left;">Click the "Start" button, then wait until the background color changes to pink.</li>
+	<li style="text-align: left;">As soon as it changes, click the "Stop" button.</li>
+</ol>
+<p>It may take a couple goes to get used to it!</p>
 
+<br>
 
 <form name="response">
-Change background color in: 
-<select name="bgColorChange">
-<option selected>deeppink
-<option>aliceblue
+ 
+<select name="bgColorChange" style="display: none;">
+<option selected >deeppink
+
+<!-- <option>aliceblue
 <option>crimson
 <option>darkkhaki
 <option>cadetblue
@@ -127,6 +134,7 @@ Change background color in:
 <option>cornflowerblue
 <option>darkolivegreen
 </select>
+-->
 <input type="button" value="start" onClick="startit()">
 <input type="button" value="stop" onClick="stopTest()">
 </form>
