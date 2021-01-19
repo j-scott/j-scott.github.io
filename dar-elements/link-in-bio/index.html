@@ -4,31 +4,49 @@
 <meta charset="utf-8">
 	<meta name="robots" content="noindex">
 <title>Link in bio</title>
+<script src="mobile.js"></script>
+
+<link rel="stylesheet" type="text/css" href="style.css">
 
 </head>
 
-<body style="overscroll-behavior: none;">
+
+<body>
 
  <!-- mobile viewers -->
 
-        <div id="mobile-viewers" style="text-align: center; background-color: #DCDCDC; font-size: 30px; min-height: 100vh; padding: 100px 15px 0px 15px; font-family: Nanum Gothic, helvetica;">
+        <div id="mobile-viewers" style="">
         	
+
         	<h1>James Scott: Digital Artist Residency</h1>
             <br>
-<p>It has been detected that you have tried to enter the site via Instagram on a mobile device.</p>
+            <p>It has been detected that you have tried to enter the site via Instagram on a mobile device.</p>
 
             <p>You have therefore entered a temporary waiting area.</p>
-            <p>A link to allow you to proceed to the main site will appear in <b>15</b></span> seconds. 
-                <br>
-                <code>(countdown to be added later)</code></p>
 
-            <p>Click the link when it appears below to proceed to the main page.</p>
+            <p>A link to allow you to proceed to the main site will appear in <span id="countdowntimer" style="color: red;">15</span> seconds. 
+            
+            </p>
+
+                <script type="text/javascript">
+                    var timeleft = 15;
+                    var downloadTimer = setInterval(function(){
+                    timeleft--;
+                    document.getElementById("countdowntimer").textContent = timeleft;
+                    if(timeleft <= 0)
+                        clearInterval(downloadTimer);
+                    },1000);
+                </script>
+
+<br>
+
+            <p>When it appears, click on the link below to access the main page:</p>
             <br>
 
-            <p><a href="https://www.digitalartistresidency.org/artists/james-scott/">PROCEED</a>
-            <p><code>(delay to be added later)</code></p>
-        </div>
-        <script src="mobile.js"></script>
+<div id='showMe'><p><a href="https://www.digitalartistresidency.org/artists/james-scott/">PROCEED</a>
+            <p></div>
+                    </div>
+     
         
 </body>
 </html>

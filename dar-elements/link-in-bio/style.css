@@ -1,0 +1,31 @@
+
+    #showMe {
+  animation: cssAnimation 0s 15s forwards;
+  visibility: hidden;
+}
+
+@keyframes cssAnimation {
+  to   { visibility: visible; }
+}
+
+body {
+	overscroll-behavior: none;
+	text-align: center; 
+	background-color: #DCDCDC; 
+	font-size: 30px; 
+	min-height: 100vh; 
+	padding: 100px 15px 0px 15px; 
+	font-family: Nanum Gothic, helvetica;
+}
+
+a:visted {
+color: blue;
+}
+
+a {
+	color: blue;
+}
+
+a:hover {
+	font-weight: bold;
+}
