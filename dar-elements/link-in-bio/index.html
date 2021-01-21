@@ -4,9 +4,13 @@
 <meta charset="utf-8">
 	<meta name="robots" content="noindex">
 <title>Link in bio</title>
-<script src="mobile.js"></script>
+
+<!-- -->
+<script src="mobile.js"></script> 
 
 <link rel="stylesheet" type="text/css" href="style.css">
+
+<link href='https://fonts.googleapis.com/css?family=Nanum Gothic' rel='stylesheet'>
 
 </head>
 
@@ -16,20 +20,22 @@
  <!-- mobile viewers -->
 
         <div id="mobile-viewers" style="">
-        	
+            <div id="logo">
+        	<img src="https://digitalartistresidency.org/_webedit/cached-images/1.png">
+            </div>
 
-        	<h1>James Scott: Digital Artist Residency</h1>
-            <br>
+        	<h1>James Scott</h1>
+            
             <p>It has been detected that you have tried to enter the site via Instagram on a mobile device.</p>
 
             <p>You have therefore entered a temporary waiting area.</p>
 
-            <p>A link to allow you to proceed to the main site will appear in <span id="countdowntimer" style="color: red;">15</span> seconds. 
+            <p>A link to allow you to proceed to the main site will appear in <span id="countdowntimer" style="color: red;">20</span> seconds. 
             
             </p>
 
                 <script type="text/javascript">
-                    var timeleft = 15;
+                    var timeleft = 20;
                     var downloadTimer = setInterval(function(){
                     timeleft--;
                     document.getElementById("countdowntimer").textContent = timeleft;
@@ -43,7 +49,7 @@
             <p>When it appears, click on the link below to access the main page:</p>
             <br>
 
-<div id='showMe'><p><a href="https://www.digitalartistresidency.org/artists/james-scott/">PROCEED</a>
+<div id='showMe'><p id="proceed"><a href="https://www.digitalartistresidency.org/artists/james-scott/">PROCEED</a>
             <p></div>
                     </div>
      

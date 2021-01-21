@@ -1,5 +1,5 @@
 
-    #showMe {
+#showMe {
   animation: cssAnimation 0s 15s forwards;
   visibility: hidden;
 }
@@ -9,13 +9,28 @@
 }
 
 body {
-	overscroll-behavior: none;
-	text-align: center; 
-	background-color: #DCDCDC; 
-	font-size: 30px; 
+	overscroll-behavior: none; 
+	background-color: #FFFFFF; 
 	min-height: 100vh; 
-	padding: 100px 15px 0px 15px; 
+	padding: 10px 15px 0px 15px; 
 	font-family: Nanum Gothic, helvetica;
+
+}
+
+h1 {
+	padding-top: 20px;
+	font-size: 90px; 
+	text-align: center;
+	padding: 50px 0px 70px 0px;
+	letter-spacing: 0.5px;
+}
+
+p {
+	 
+	text-align: left;
+	padding: 15px 0px 0px 0px;
+	letter-spacing: 0.5px;
+	font-size: 25px;
 }
 
 a:visted {
@@ -24,8 +39,18 @@ color: blue;
 
 a {
 	color: blue;
+
 }
 
 a:hover {
 	font-weight: bold;
+}
+
+#proceed {
+	font-size: 50px;
+	text-align: center;
+}
+
+#logo {
+	text-align: left;
 }
