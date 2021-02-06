@@ -1,147 +1,120 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-<title>Reflex Test</title>
-	<link rel="stylesheet" type="text/css" href="style.css" />
 
-<meta name="robots" content="noindex">
+    <title>Reaction Timer</title>
+
+    <style type="text/css">
+
+        #topcontainer {
+
+            width: 100%;
+            height: 150px;
+
+        }
+
+
+
+        #shape {
+
+            width: 200px;
+            height: 200px;
+            background-color: ;
+            display: none;
+            position: relative;
+
+
+        }
+
+
+    </style>
 
 </head>
 
-<body style="text-align: center;">
+<body>
 
-	<script language="JavaScript">
-<!-- hiding for old browsers 
-	// response time test, created by Jasper van Zandbeek
-	// e-mail: jasperz@net-v.com
+    <div id="topcontainer">
 
-var startTime=new Date();
-var endTime=new Date();
-var startPressed=false;
-var bgChangeStarted=false;
-var maxWait=20;
-var timerID;
+        <h1>Test Your Reaction Time!</h1>
 
-function startTest()
-{
-	document.body.style.background=document.response.bgColorChange.options[document.response.bgColorChange.selectedIndex].text;
-	bgChangeStarted=true;
-	startTime=new Date();
-}
+        <h2>Click on the box as quickly as possible when it appears!</h2>
 
-function remark(responseTime)
-{
-	var responseString="";
-	if (responseTime < 0.10)
-		responseString="Well done!";
-	if (responseTime >= 0.10 && responseTime < 0.20)
-		responseString="Nice!";
-	if (responseTime >=0.20 && responseTime < 0.30)
-		responseString="Could be better...";
-	if (responseTime >=0.30 && responseTime < 0.60)
-		responseString="Keep practising!";
-	if (responseTime >=0.60 && responseTime < 1)
-		responseString="Have you been drinking?";
-	if (responseTime >=1)
-		responseString="Did you fall asleep?";
+        <h3>Your reaction time: <span id="timer"></span>  </h3>
+    </div>
 
-	return responseString;
-}
-
-function stopTest()
-{
-	if(bgChangeStarted)
-	{
-		endTime=new Date();
-		var responseTime=(endTime.getTime()-startTime.getTime())/1000;
-
-		document.body.style.background="white";       
-		alert("Your response time is: " + responseTime + " seconds " + "\n" + remark(responseTime));
-		startPressed=false;
-		bgChangeStarted=false;
-	}
-	else
-	{
-		if (!startPressed)
-		{
-			alert("press start first to start test");
-		}
-		else
-		{       
-			clearTimeout(timerID);
-			startPressed=false;             
-			alert("cheater! you pressed too early!");
-		}               
-	}
-}
-
-var randMULTIPLIER=0x015a4e35;
-var randINCREMENT=1;
-var today=new Date();
-var randSeed=today.getSeconds();
-function randNumber()
-{
-	randSeed = (randMULTIPLIER * randSeed + randINCREMENT) % (1 << 31);
-	return((randSeed >> 15) & 0x7fff) / 32767;
-}
-
-function startit()
-{
-	if(startPressed)
-	{
-		alert("Already started. Press stop to stop");
-		return;
-	}
-	else
-	{
-		startPressed=true; 
-		timerID=setTimeout('startTest()', 6000*randNumber());
-	}
-}
-
-// --> 
+    <div id="shape"> Click me to start!</div>
 
 
-</script>
+<div>
+	<p>Whats a good reaction time?</p>
+</div>
 
-<h1>Test your Response time!</h1>
-<h2>Instructions:</h2>
-<ol style="max-width: 510px; margin: auto;">
-	<li style="text-align: left;">Click the "Start" button, then wait until the background color changes to pink.</li>
-	<li style="text-align: left;">As soon as it changes, click the "Stop" button.</li>
-</ol>
-<p>It may take a couple goes to get used to it!</p>
 
-<br>
 
-<form name="response">
- 
-<select name="bgColorChange" style="display: none;">
-<option selected >deeppink
+    <script type="text/javascript">
 
-<!-- <option>aliceblue
-<option>crimson
-<option>darkkhaki
-<option>cadetblue
-<option>darkorchid
-<option>coral
-<option>chocolate
-<option>mediumslateblue
-<option>tomato
-<option>darkslategray
-<option>limegreen
-<option>cornflowerblue
-<option>darkolivegreen
-</select>
--->
-<input type="button" value="start" onClick="startit()">
-<input type="button" value="stop" onClick="stopTest()">
-</form>
-<!--
-<p align="center"><font face="arial" size="-2">This free script provided by</font><br>
-<font face="arial, helvetica" size="-2"><a href="http://javascriptkit.com">JavaScript
-Kit</a></font></p> -->
+        var start = new Date().getTime();
+
+
+        function getRandomColor() {
+            var letters = '0123456789ABCDEF';
+            var color = '#';
+            for (var i = 0; i < 6; i++ ) {
+            color += letters[Math.floor(Math.random() * 16)];
+            }
+            return color;
+        }
+
+        function makeShapeAppear() {
+
+            document.getElementById("shape").style.backgroundColor = getRandomColor();
+
+            document.getElementById("shape").style.display = "block";
+
+            start = new Date().getTime();
+
+        }
+
+        function appearAfterDelay() {
+
+                setTimeout(makeShapeAppear, Math.random() * 3000);
+
+        }
+
+            appearAfterDelay();
+
+         document.getElementById('shape').onclick = function() {
+
+            document.getElementById("shape").style.display = "none";
+
+            var end = new Date().getTime();
+
+            var timeTaken = (end - start) / 1000;
+
+            document.getElementById("timer").innerHTML = timeTaken + "s";
+
+
+
+
+            appearAfterDelay();
+
+
+            } 
+
+
+
+
+
+
+
+
+
+
+    </script>
+
+
+
 </body>
-
 </html>
