@@ -8,26 +8,61 @@
 
     <style type="text/css">
 
-        #topcontainer {
-
-            width: 100%;
-            height: 150px;
-
+        body {
+            font-family: helvetica;
+            overscroll-behavior: none;
         }
 
+        #topcontainer {
 
+            
+            text-align: center;
+            margin:  10px;
+
+
+        }
 
         #shape {
 
             width: 200px;
-            height: 200px;
+            height: 90px;
             background-color: ;
             display: none;
             position: relative;
+            margin-left: auto;  
+            margin-right: auto;
+            padding: 0; 
+            line-height: 3.5; 
+            font-weight: bold;
+            text-shadow: 0px 0px 10px white;
+            font-size: 25px;
+            text-align: center;
+        }
 
+        #info {
+            
+            
+            text-align: center;
+            margin:  10px;
 
         }
 
+        p {
+            font-size: 20px;
+        }
+
+        h1 {
+            margin: 0;
+            padding: 10px;
+        }
+
+        h2 {
+
+        }
+
+        h3 {
+            font-size: 20px;
+        }
 
     </style>
 
@@ -37,20 +72,28 @@
 
     <div id="topcontainer">
 
-        <h1>Test Your Reaction Time!</h1>
+        <h1>Test Your Reaction Time</h1>
 
-        <h2>Click on the box as quickly as possible when it appears!</h2>
-
-        <h3>Your reaction time: <span id="timer"></span>  </h3>
+        <h2>Instructions:</h2>
+           <p>Click on the box below to start, then click again immediately when a new box appears.
+            </p> 
+            <p><b>Note:</b> Ignore the first score as the programme counts from the moment this page first loaded!</p>
     </div>
 
-    <div id="shape"> Click me to start!</div>
+<br>
 
+    <div id="shape"> Click to start!</div>
 
-<div>
-	<p>Whats a good reaction time?</p>
+<div style="position: absolute; top: 375px; width: 100%;">
+        <div id="info">
+            
+            <h2>Your reaction time: <span id="timer"></span>  </h2>
+            <br>
+        	<h3>Whats a good reaction time?</h3>
+            <p>For a visual stimulus, the average human reaction time is between 0.2-0.3 seconds. 0.15 seconds is about the human limit.</p>
+            <p>Oh, and if you find a way to cheat this game (of which there are many) you are only cheating yourself :)</p>
+        </div>
 </div>
-
 
 
     <script type="text/javascript">
