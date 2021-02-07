@@ -1,0 +1,60 @@
+        body {
+            font-family: helvetica;
+            overscroll-behavior: none;
+        }
+
+        #topcontainer {
+
+            
+            text-align: center;
+            margin:  10px;
+
+
+        }
+
+        #shape {
+
+            width: 200px;
+            height: 90px;
+            background-color: ;
+            display: ;
+            position: relative;
+            margin-left: auto;  
+            margin-right: auto;
+            padding: 0; 
+            line-height: 3.5; 
+            font-weight: bold;
+            text-shadow: 0px 0px 10px white;
+            font-size: 25px;
+            text-align: center;
+        }
+
+        #below-start{
+            
+            width: 100%;
+        }
+
+        #info {
+            
+            padding-top: 10px;
+            text-align: center;
+            margin:  10px;
+
+        }
+
+        p {
+            font-size: 20px;
+        }
+
+        h1 {
+            margin: 0;
+            padding: 10px;
+        }
+
+        h2 {
+
+        }
+
+        h3 {
+            font-size: 20px;
+        }
