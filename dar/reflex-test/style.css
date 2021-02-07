@@ -12,6 +12,10 @@
 
         }
 
+        #placeholder {
+height: 90px;
+        }
+        
         #shape {
 
             width: 200px;
