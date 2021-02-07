@@ -1,6 +1,7 @@
         body {
             font-family: helvetica;
             overscroll-behavior: none;
+            background-color:    #ffe6ea;
         }
 
         #topcontainer {
